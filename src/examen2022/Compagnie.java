@@ -38,7 +38,7 @@ public class Compagnie implements GestionVol{
 
     public boolean Disponibilite(int horaireRech){
         for (Vol vol : list_vol) {
-            if(vol.getHeureAtterisage()==horaireRech){
+            if(vol.getHeureAtterisage().equals(horaireRech)){
                 return true;
             }
         }
